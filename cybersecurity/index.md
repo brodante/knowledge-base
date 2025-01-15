@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Cybersecurity Knowledge Base
-permalink: /cybersecurity-knowledge-base/
+permalink: /cybersecurity/
 ---
 
 # Cybersecurity Knowledge Base

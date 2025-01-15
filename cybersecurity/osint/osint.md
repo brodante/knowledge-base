@@ -1,6 +1,9 @@
 ---
-title: OSINT Guide
+layout: default
+title: OSINT (Open-Source Intelligence)
+permalink: /cybersecurity/osint/
 ---
+
 
 # OSINT (Open-Source Intelligence) 🕵️‍♂️
 
