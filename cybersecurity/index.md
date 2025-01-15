@@ -8,8 +8,9 @@ permalink: /cybersecurity/
 
 ## According to the Team
 
-### Red Teaming (Ethical Hacking)
+### [Red Teaming (Ethical Hacking)](/cybersecurity/in-short/red-team.md)
 Red Teaming involves simulating real-world cyberattacks to test and improve an organization's security posture.
+Here's a short and direct path for Red Teamers **[in short.](in-short/red-team.md)**
 
 ### Blue Teaming (Defensive Testing)
 Blue Teaming focuses on defensive strategies and techniques to detect, respond to, and prevent cyber threats.

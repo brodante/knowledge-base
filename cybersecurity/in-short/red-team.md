@@ -1,6 +1,12 @@
-# Cybersecurity Beginner's Roadmap 🌐
+---
+layout: default
+title: Red Teaming Roadmap in short
+permalink: /cybersecurity/in-short/red-team.md
+---
 
-Embark on your cybersecurity journey with this step-by-step guide, designed to take you from a novice to a skilled practitioner. 
+# Red Teaming Roadmap in short 🌐
+
+Embark on your Red-Teaming journey with this step-by-step guide, designed to take you from a novice to a skilled practitioner. 
 
 ---
 
