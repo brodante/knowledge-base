@@ -26,7 +26,7 @@ Understand how collaboration strengthens security **[in short.](in-short/purple-
 ## Roadmap: Steps to Begin Your Cybersecurity Journey
 
 1. **[Open-Source Intelligence (OSINT)](osint/)**
-   - Learn to gather and analyze publicly available information using tools like [Shodan](https://www.shodan.io/), [Maltego](https://www.paterva.com/), and [Google Dorks](https://www.exploit-db.com/google-hacking-database).
+   - Learn to gather and analyze publicly available information using tools like [Shodan](https://www.shodan.io/), [Maltego](https://www.maltego.com/), and [Google Dorks](https://www.exploit-db.com/google-hacking-database).
 
 2. **[Scanning](scanning/)**
    - Master port scanning with tools like [nmap](https://nmap.org/) to identify open ports and services.
