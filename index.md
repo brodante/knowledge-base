@@ -3,7 +3,7 @@ title: Welcome
 description: Explore my guides, tutorials, and knowledge base.
 ---
 
-# Dante's Knowledge Base <img src="images/kanna.gif" alt="kanna" style="width:20px; height:20px;"/>
+# Dante's Knowledge Base <img src="images/catty.gif" alt="catty" style="width:25px; height:25px;"/>
 
 Welcome to my collection of tutorials and guides. Explore topics below:
 
