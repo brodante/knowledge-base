@@ -23,6 +23,28 @@ Understand how collaboration strengthens security **[in short.](in-short/purple-
 
 ---
 
+## Cybersecurity Certifications
+
+### Basic Certifications
+- [CompTIA Security+](https://www.comptia.org/certifications/security)
+- [Certified Ethical Hacker (CEH)](https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/)
+- [Cisco Certified CyberOps Associate](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/cyber-ops-associate.html)
+
+### Intermediate Certifications
+- [Certified Information Systems Security Professional (CISSP)](https://www.isc2.org/Certifications/CISSP)
+- [Certified Information Security Manager (CISM)](https://www.isaca.org/credentialing/cism)
+- [GIAC Security Essentials (GSEC)](https://www.giac.org/certifications/security-essentials-gsec)
+
+### Advanced Certifications
+- [Certified Information Systems Auditor (CISA)](https://www.isaca.org/credentialing/cisa)
+- [Offensive Security Certified Professional (OSCP)](https://www.offensive-security.com/pwk-oscp/)
+- [Certified Chief Information Security Officer (CCISO)](https://ciso.eccouncil.org/cciso-certification/)
+
+## Certification Roadmap
+For a comprehensive roadmap of cybersecurity certifications, refer to this [roadmap](https://pauljerimy.com/security-certification-roadmap/).
+
+---
+
 ## Roadmap: Steps to Begin Your Cybersecurity Journey
 
 1. **[Open-Source Intelligence (OSINT)](osint/)**
