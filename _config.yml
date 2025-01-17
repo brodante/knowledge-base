@@ -1,6 +1,6 @@
 theme: jekyll-theme-midnight
 exclude:
-	- assets/css/style.scss # Ensures Jekyll doesn't process this file as a page
+  - assets/css/style.scss # Ensures Jekyll doesn't process this file as a page
 
 title: Dante's Knowledge Base # Website title
 description: A collection of guides and tutorials by Dante. # Website description
