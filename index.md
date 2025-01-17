@@ -3,7 +3,7 @@ title: Welcome
 description: Explore my guides, tutorials, and knowledge base.
 ---
 
-# Dante's Knowledge Base 🌙
+# Dante's Knowledge Base ![Kanna](images/kanna.gif "Kanna")
 
 Welcome to my collection of tutorials and guides. Explore topics below:
 
@@ -18,6 +18,7 @@ Welcome to my collection of tutorials and guides. Explore topics below:
     - [Red Teaming](cybersecurity/in-short/red-team)
     - [Blue Teaming](cybersecurity/in-short/blue-team)
     - [Purple Teaming](cybersecurity/in-short/purple-team)
+    - [Cybersecurity Certifications](https://pauljerimy.com/security-certification-roadmap/)
 - [Programming](programming/)
     - [C++](programming/cpp)
     - [Python](programming/python)
