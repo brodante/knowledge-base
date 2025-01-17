@@ -1,4 +1,14 @@
 theme: jekyll-theme-midnight
-title: Dante's Knowledge Base
-description: A collection of guides and tutorials by Dante.
-show_downloads: true
+exclude:
+	- assets/css/style.scss # Ensures Jekyll doesn't process this file as a page
+
+title: Dante's Knowledge Base # Website title
+description: A collection of guides and tutorials by Dante. # Website description
+show_downloads: true # Option for displaying download links for pages
+
+homepage: https://brodante.github.io/knowledge-base/ # Homepage URL
+
+# Optional custom configuration for Midnight theme (if supported)
+header_color: "#1A1A2E" # Dark Navy Blue (Background)
+text_color: "#EAEAEA"   # Light Gray (Text)
+accent_color: "#E94560" # Bright Coral Red (Links/Buttons)
