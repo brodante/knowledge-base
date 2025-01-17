@@ -1,16 +1,35 @@
 @import "jekyll-theme-midnight";
+/* Include base Midnight styles */
 
-/* Custom styles */
+/* Emerald Night Theme Colors */
 body {
-    background-color: #1A1A2E;
-    /* Example: Dark Navy Blue */
-    color: #EAEAEA;
-    /* Example: Light Gray */
+    background-color: #001E1D;
+    /* Dark Teal */
+    color: #C9F7F5;
+    /* Light Cyan */
 }
 
 a {
-    color: #E94560;
-    /* Example: Bright Coral Red */
+    color: #00A676;
+    /* Emerald Green */
+    text-decoration: none;
 }
 
-/* Add more customizations below */
+a:hover {
+    color: #01C98A;
+    /* Lighter Emerald for hover */
+}
+
+.header {
+    background-color: #001E1D;
+    /* Match background color */
+    color: #C9F7F5;
+    /* Light Cyan for header text */
+}
+
+.footer {
+    background-color: #001E1D;
+    /* Same as body for consistency */
+    color: #A7A9BE;
+    /* Soft Lilac Gray */
+}
