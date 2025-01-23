@@ -1,4 +1,4 @@
-theme: jekyll-theme-midnight
+theme: jekyll-theme-midnight  # https://github.com/pages-themes/midnight
 exclude:
   - assets/css/style.scss # Ensures Jekyll doesn't process this file as a page
 
@@ -8,3 +8,4 @@ show_downloads: true # Option for displaying download links for pages
 google_analytics: G-W2N65324DH
 
 homepage: https://brodante.github.io/knowledge-base/ # Homepage URL
+
