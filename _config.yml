@@ -8,8 +8,3 @@ show_downloads: true # Option for displaying download links for pages
 google_analytics: G-W2N65324DH
 
 homepage: https://brodante.github.io/knowledge-base/ # Homepage URL
-
-# Optional custom configuration for Midnight theme (if supported)
-header_color: "#1A1A2E" # Dark Navy Blue (Background)
-text_color: "#EAEAEA"   # Light Gray (Text)
-accent_color: "#E94560" # Bright Coral Red (Links/Buttons)
