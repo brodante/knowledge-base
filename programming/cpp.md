@@ -1,7 +1,7 @@
 ---
 layout: default
 title: C++ Programming Roadmap in short
-permalink: /programming/c++/cpp
+permalink: /programming/cpp/
 ---
 
 # C++ Programming Roadmap in short 💻
