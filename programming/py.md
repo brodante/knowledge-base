@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Python Programming Roadmap in Short
-permalink: /programming/python/
+permalink: /programming/py/
 ---
 
 # Python Programming Roadmap in Short 🐍
