@@ -117,7 +117,7 @@ for num in my_generator():
 Enhance your learning with these resources:
 
 ### YouTube Channels:
-- freeCodeCamp: [freeCodeCamp YouTube Channel](https://www.youtube.com/@freeCodeCamp)
+- freeCodeCamp: [Jenny's YouTube Channel](https://www.youtube.com/playlist?list=PLdo5W4Nhv31bZSiqiOL5ta39vSnBxpOPT)
 - Tech With Tim: [Tech With Tim YouTube Channel](https://www.youtube.com/@TechWithTim)
 
 ### Websites:
