@@ -3,7 +3,7 @@ import re
 import sys
 import yaml
 
-KB_ROOT = "knowledge-base"  # Adjust this based on your repo structure
+KB_ROOT = "knowledge-base"  # Adjust based on your repo structure
 
 def validate_markdown(file_path):
 	with open(file_path, "r", encoding="utf-8") as f:
@@ -37,7 +37,10 @@ def validate_markdown(file_path):
 		return False
 
 	# Validate permalink matches file structure
-	expected_path = os.path.splitext(file_path.replace(KB_ROOT, "").lstrip("/"))[0] + "/"
+	relative_path = os.path.relpath(file_path, KB_ROOT)  # Get relative path
+	expected_path = "/" + os.path.splitext(relative_path)[0] + "/"  # Remove .md and add '/'
+	expected_path = expected_path.replace("\\", "/")  # Ensure forward slashes for cross-platform
+
 	if meta["permalink"] != expected_path:
 		print(f"❌ {file_path}: Permalink mismatch! Expected `{expected_path}` but found `{meta['permalink']}`")
 		return False
