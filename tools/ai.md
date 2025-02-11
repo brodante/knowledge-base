@@ -1,7 +1,7 @@
 ---
 layout: default
 title: AI Tools in short
-permalink: /tools/ai/
+permalink: /tools/artificialintelligence/
 ---
 
 # AI Tools in short 🤖
