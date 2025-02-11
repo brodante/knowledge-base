@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Otaku Tools in short
-permalink: /tools/degens/
+permalink: /tools/shhh/
 ---
 
 # Otaku Tools in short 🎌
