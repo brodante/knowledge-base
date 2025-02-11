@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Cybersecurity Tools in short
-permalink: /cybersecurity/tools/
+permalink: /tools/cybersecurity
 ---
 
 # Cybersecurity Tools in short 🔒

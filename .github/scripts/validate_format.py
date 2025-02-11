@@ -1,55 +1,57 @@
 import os
+import re
+import sys
 import yaml
 
-REQUIRED_FIELDS = {"layout", "title", "permalink"}
-errors = []
+KB_ROOT = "knowledge-base"  # Adjust this based on your repo structure
 
-def is_valid_page(file_path):
+def validate_markdown(file_path):
 	with open(file_path, "r", encoding="utf-8") as f:
-		content = f.read()
+		lines = f.readlines()
 
-	# Ensure front matter exists
-	if not content.startswith("---"):
-		errors.append(f"❌ {file_path}: Missing front matter.")
+	# Extract front matter (between ---)
+	if lines[0].strip() != "---":
+		print(f"❌ {file_path}: Missing front matter start (`---`)")
 		return False
 
-	# Extract front matter
+	front_matter = []
+	for line in lines[1:]:
+		if line.strip() == "---":
+			break
+		front_matter.append(line)
+
+	if not front_matter:
+		print(f"❌ {file_path}: Empty or missing front matter")
+		return False
+
+	# Parse front matter as YAML
 	try:
-		front_matter = yaml.safe_load(content.split("---")[1])
-	except yaml.YAMLError:
-		errors.append(f"❌ {file_path}: Invalid YAML in front matter.")
+		meta = yaml.safe_load("\n".join(front_matter))
+	except yaml.YAMLError as e:
+		print(f"❌ {file_path}: Invalid YAML format - {e}")
 		return False
 
-	# Check required fields
-	if not REQUIRED_FIELDS.issubset(front_matter.keys()):
-		errors.append(f"❌ {file_path}: Missing required fields {REQUIRED_FIELDS}.")
+	# Check for required keys
+	if "layout" not in meta or "title" not in meta or "permalink" not in meta:
+		print(f"❌ {file_path}: Missing required metadata (layout, title, or permalink)")
 		return False
 
-	# Validate permalink matches file path
-	expected_path = front_matter["permalink"].strip("/")
-	actual_path = os.path.splitext(file_path.replace("\\", "/"))[0].strip("./")
-	
-	if expected_path != actual_path:
-		errors.append(f"❌ {file_path}: Permalink mismatch. Expected '{expected_path}', found '{actual_path}'.")
+	# Validate permalink matches file structure
+	expected_path = os.path.splitext(file_path.replace(KB_ROOT, "").lstrip("/"))[0] + "/"
+	if meta["permalink"] != expected_path:
+		print(f"❌ {file_path}: Permalink mismatch! Expected `{expected_path}` but found `{meta['permalink']}`")
 		return False
 
+	print(f"✅ {file_path}: Passed validation!")
 	return True
 
-def main():
-	markdown_files = []
-	for root, _, files in os.walk("."):
-		for file in files:
-			if file.endswith(".md"):
-				markdown_files.append(os.path.join(root, file))
+# Find all Markdown files in the repo
+failed = False
+for root, _, files in os.walk(KB_ROOT):
+	for file in files:
+		if file.endswith(".md"):
+			full_path = os.path.join(root, file)
+			if not validate_markdown(full_path):
+				failed = True
 
-	all_valid = all(is_valid_page(file) for file in markdown_files)
-
-	if not all_valid:
-		print("\n".join(errors))
-		exit(1)
-
-	print("✅ All pages follow the required format.")
-	exit(0)
-
-if __name__ == "__main__":
-	main()
+sys.exit(1 if failed else 0)
