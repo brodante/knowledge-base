@@ -1,0 +1,66 @@
+name: Validate Page Format
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pull-requests: write  # Required to post comments
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Validation Script
+        id: validation
+        run: |
+          python .github/scripts/validate_format.py > validation_output.txt
+          echo "exit_code=$?" >> $GITHUB_ENV
+
+      - name: Post Comment on PR
+        uses: mshick/add-pr-comment@v2
+        with:
+          message: |
+            **Validation Results:**  
+            ```
+            $(cat validation_output.txt)
+            ```
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          allow-repeats: false  # Prevents duplicate comments
+
+    outputs:
+      validation_passed: ${{ env.exit_code == 0 }}
+
+  success_comment:
+    needs: validate
+    if: needs.validate.outputs.validation_passed == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comment Success
+        uses: mshick/add-pr-comment@v2
+        with:
+          message: |
+            ✅ **All pages are correctly formatted!**  
+            This PR is ready for review and merging. 🚀
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+  failure_comment:
+    needs: validate
+    if: needs.validate.outputs.validation_passed == 'false'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comment Failure
+        uses: mshick/add-pr-comment@v2
+        with:
+          message: |
+            ❌ **Validation Failed!**  
+            Some pages do not follow the required format. Please fix the issues below:  
+            ```
+            $(cat validation_output.txt)
+            ```
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
