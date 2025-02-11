@@ -1,5 +1,4 @@
 import os
-import re
 import sys
 import yaml
 
@@ -38,8 +37,13 @@ def validate_markdown(file_path):
 
 	# Validate permalink matches file structure
 	relative_path = os.path.relpath(file_path, KB_ROOT)  # Get relative path
-	expected_path = "/" + os.path.splitext(relative_path)[0] + "/"  # Remove .md and add '/'
-	expected_path = expected_path.replace("\\", "/")  # Ensure forward slashes for cross-platform
+	relative_path = os.path.splitext(relative_path)[0]  # Remove .md extension
+	expected_path = "/" + relative_path.replace("\\", "/") + "/"  # Convert to forward slashes & add trailing "/"
+
+	# Debugging prints
+	print(f"🔍 Debug: Checking {file_path}")
+	print(f"   ➤ Expected permalink: `{expected_path}`")
+	print(f"   ➤ Found permalink: `{meta['permalink']}`")
 
 	if meta["permalink"] != expected_path:
 		print(f"❌ {file_path}: Permalink mismatch! Expected `{expected_path}` but found `{meta['permalink']}`")
