@@ -21,7 +21,7 @@ Welcome to my collection of tutorials and guides. Explore topics below:
     - [Cybersecurity Certifications](https://pauljerimy.com/security-certification-roadmap/)
 - [Programming](programming/)
     - [C++](programming/cpp)
-    - [Python](programming/python)
+    - [Python](programming/py)
 
 
 ## About Me
