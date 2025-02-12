@@ -1,10 +1,14 @@
 name: Validate Knowledge Base Pages
 
 on:
+  permissions:
+    contents: read
+    statuses: write
+
   push:
     branches:
       - main  # Runs on every push to main
-  pull_request:
+  pull_request_target:
     branches:
       - main  # Runs on PRs
 
