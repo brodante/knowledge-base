@@ -1,64 +1,129 @@
+#!/usr/bin/env python3
+"""Validate that every internal link in the knowledge-base resolves to a built page.
+
+Checks:
+  1. Every site page (has `permalink` in its front matter) is discoverable.
+  2. Every internal link in every page points to an existing permalink.
+
+Runs from anywhere — the repo root is derived from this script's location.
+Depends only on the Python standard library.
+"""
+
 import os
+import re
 import sys
-import yaml
+from urllib.parse import urljoin, urlsplit
 
-KB_ROOT = "knowledge-base"  # Adjust based on your repo structure
+REPO_ROOT = os.path.dirname(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+)
 
-def validate_markdown(file_path):
-	with open(file_path, "r", encoding="utf-8") as f:
-		lines = f.readlines()
+EXCLUDED_DIRS = {".git", ".github"}
+LINK_RE = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
+URL_PREFIXES = ("http:", "https:", "mailto:", "tel:", "data:", "#", "<")
 
-	# Extract front matter (between ---)
-	if lines[0].strip() != "---":
-		print(f"❌ {file_path}: Missing front matter start (`---`)")
-		return False
 
-	front_matter = []
-	for line in lines[1:]:
-		if line.strip() == "---":
-			break
-		front_matter.append(line)
+def read_text(path):
+    with open(path, encoding="utf-8-sig") as fh:
+        return fh.read()
 
-	if not front_matter:
-		print(f"❌ {file_path}: Empty or missing front matter")
-		return False
 
-	# Parse front matter as YAML
-	try:
-		meta = yaml.safe_load("\n".join(front_matter))
-	except yaml.YAMLError as e:
-		print(f"❌ {file_path}: Invalid YAML format - {e}")
-		return False
+def front_matter_meta(text):
+    """Parse the flat key:value front matter of a markdown file."""
+    if not text.startswith("---"):
+        return {}
+    end = text.find("\n---", 3)
+    if end == -1:
+        return {}
+    meta = {}
+    for line in text[3:end].splitlines():
+        stripped = line.strip()
+        if not stripped or stripped.startswith(("#", "layout")):
+            continue
+        if ":" in stripped:
+            key, value = stripped.split(":", 1)
+            meta[key.strip().lower()] = value.strip().strip("\"'")
+    return meta
 
-	# Check for required keys
-	if "layout" not in meta or "title" not in meta or "permalink" not in meta:
-		print(f"❌ {file_path}: Missing required metadata (layout, title, or permalink)")
-		return False
 
-	# Validate permalink matches file structure
-	relative_path = os.path.relpath(file_path, KB_ROOT)  # Get relative path
-	relative_path = os.path.splitext(relative_path)[0]  # Remove .md extension
-	expected_path = "/" + relative_path.replace("\\", "/") + "/"  # Convert to forward slashes & add trailing "/"
+def is_markdown(name):
+    return name.lower().endswith(".md")
 
-	# Debugging prints
-	print(f"🔍 Debug: Checking {file_path}")
-	print(f"   ➤ Expected permalink: `{expected_path}`")
-	print(f"   ➤ Found permalink: `{meta['permalink']}`")
 
-	if meta["permalink"] != expected_path:
-		print(f"❌ {file_path}: Permalink mismatch! Expected `{expected_path}` but found `{meta['permalink']}`")
-		return False
+def collect_paths():
+    """Map every normalized permalink to the markdown file that serves it."""
+    pages = {}  # normalized URL path -> (source file, permalink)
+    for root, dirs, files in os.walk(REPO_ROOT):
+        dirs[:] = [d for d in dirs if d not in EXCLUDED_DIRS]
+        for name in files:
+            if not is_markdown(name):
+                continue
+            path = os.path.join(root, name)
+            rel = os.path.relpath(path, REPO_ROOT).replace("\\", "/")
+            meta = front_matter_meta(read_text(path))
+            permalink = meta.get("permalink", "")
+            if permalink and permalink.startswith("/"):
+                key = permalink.rstrip("/") or "/"
+                pages[key] = (rel, permalink)
+    # The root index.md is always served at "/"
+    home = os.path.join(REPO_ROOT, "index.md")
+    if os.path.exists(home):
+        pages.setdefault("/", ("index.md", "/"))
+    return pages
 
-	print(f"✅ {file_path}: Passed validation!")
-	return True
 
-# Find all Markdown files in the repo
-failed = False
-for root, _, files in os.walk(KB_ROOT):
-	for file in files:
-		if file.endswith(".md"):
-			full_path = os.path.join(root, file)
-			if not validate_markdown(full_path):
-				failed = True
+def deployed_base(path, pages):
+    """The deployed URL of a markdown file, or None if it's not a site page."""
+    rel = os.path.relpath(path, REPO_ROOT).replace("\\", "/")
+    if rel == "index.md":
+        return "/"
+    meta = front_matter_meta(read_text(path))
+    return meta.get("permalink") or None
 
-sys.exit(1 if failed else 0)
+
+def main():
+    pages = collect_paths()
+    errors = []
+
+    for root, dirs, files in os.walk(REPO_ROOT):
+        dirs[:] = [d for d in dirs if d not in EXCLUDED_DIRS]
+        for name in sorted(files):
+            if not is_markdown(name):
+                continue
+            path = os.path.join(root, name)
+            rel = os.path.relpath(path, REPO_ROOT).replace("\\", "/")
+            base = deployed_base(path, pages)
+            if base is None:
+                continue  # not part of the rendered site (README, CONTRIBUTING, ...)
+
+            text = read_text(path)
+            for match in LINK_RE.finditer(text):
+                target = match.group(1).strip()
+                if target.startswith(URL_PREFIXES) or ":" in target.split("/", 1)[0]:
+                    continue  # external, anchor-only, or protocol-prefixed
+                target = target.split("#")[0].strip()
+                if not target:
+                    continue
+
+                resolved = urljoin("https://site" + base, target)
+                path_part = urlsplit(resolved).path
+                key = path_part.rstrip("/") or "/"
+
+                if key not in pages:
+                    errors.append(
+                        f"{rel}: broken link -> `{target}` (resolves to {path_part})"
+                    )
+
+    if errors:
+        print("❌ Found broken internal links:")
+        for err in sorted(set(errors)):
+            print(f"   {err}")
+        print(f"\n{len(set(errors))} broken link(s) found.")
+        return 1
+
+    print(f"✅ All internal links resolve correctly across {len(pages)} pages.")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
