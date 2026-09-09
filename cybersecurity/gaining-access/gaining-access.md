@@ -70,6 +70,6 @@ Zero-days are vulnerabilities unknown to the vendor, with **no patch available**
 
 ## Next Steps
 
-Once you gain access, move to [Stabilizing Access](/cybersecurity/stabilizing-access/) to learn how to maintain your foothold.
+Once you gain access, move to [Stabilizing Access](../stabilizing-access/) to learn how to maintain your foothold.
 
-[← Back to Cybersecurity Hub](/cybersecurity/)
+[← Back to Cybersecurity Hub](../)

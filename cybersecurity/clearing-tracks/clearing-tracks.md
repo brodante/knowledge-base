@@ -83,10 +83,10 @@ The better you are at erasing tracks, the more defenders should practice:
 
 You've now covered the full offensive lifecycle:
 
-1. [OSINT](/cybersecurity/osint/) — information gathering
-2. [Scanning](/cybersecurity/scanning/) — discovering targets
-3. [Gaining Access](/cybersecurity/gaining-access/) — exploitation
-4. [Stabilizing Access](/cybersecurity/stabilizing-access/) — persistence
+1. [OSINT](../osint/) — information gathering
+2. [Scanning](../scanning/) — discovering targets
+3. [Gaining Access](../gaining-access/) — exploitation
+4. [Stabilizing Access](../stabilizing-access/) — persistence
 5. **Clearing Tracks** — you are here 🙂
 
-[← Back to Cybersecurity Hub](/cybersecurity/)
+[← Back to Cybersecurity Hub](../)

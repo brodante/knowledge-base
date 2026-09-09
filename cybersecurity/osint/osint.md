@@ -13,4 +13,4 @@ Open-source intelligence involves gathering publicly available data to gain insi
 - [Shodan](https://www.shodan.io)
 - [Maltego](https://www.maltego.com)
 
-[Back to Cybersecurity Hub](/cybersecurity/)
+[Back to Cybersecurity Hub](../)

@@ -95,6 +95,6 @@ Use your foothold as a **jump box** to reach internal networks invisible from th
 
 ## Next Steps
 
-After stabilizing your access, learn how to [Clear Your Tracks](/cybersecurity/clearing-tracks/) to avoid detection.
+After stabilizing your access, learn how to [Clear Your Tracks](../clearing-tracks/) to avoid detection.
 
-[← Back to Cybersecurity Hub](/cybersecurity/)
+[← Back to Cybersecurity Hub](../)
