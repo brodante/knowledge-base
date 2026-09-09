@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Red Teaming Roadmap in short
-permalink: /cybersecurity/in-short/red-team/
+permalink: /cybersecurity/in-short/red-team.md/
 ---
 
 # Red Teaming Roadmap in short 🌐
