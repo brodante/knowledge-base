@@ -6,59 +6,125 @@ permalink: /tools/ai/
 
 # AI Tools in short 🤖
 
+{% include resource-filter.html %}
+
 Explore a comprehensive list of essential AI tools, including chatbots and other AI-powered applications, to enhance your productivity and capabilities.
 
 ---
 
 ## 1. AI Chatbots and Assistants 💬
-Utilize these AI chatbots and assistants for various tasks.
 
-### Key Tools:
-- **ChatGPT:** [ChatGPT](https://chat.openai.com)
-  - A powerful AI chatbot developed by OpenAI.
-- **DeepSeek:** [DeepSeek](https://www.deepseek.ai)
-  - An AI-powered search assistant.
-- **Claude:** [Claude](https://www.anthropic.com/claude)
-  - An AI assistant developed by Anthropic.
-- **Gemini:** [Gemini](https://www.google.com/search/about/)
-  - An AI assistant by Google, previously known as Bard.
-- **Jasper:** [Jasper](https://www.jasper.ai)
-  - An AI writing assistant.
-- **Replika:** [Replika](https://replika.ai)
-  - An AI companion chatbot.
-- **Mitsuku:** [Mitsuku](https://www.pandorabots.com/mitsuku/)
-  - An award-winning chatbot.
-- **Woebot:** [Woebot](https://woebothealth.com)
-  - An AI mental health chatbot.
-- **Xiaoice:** [Xiaoice](https://www.msxiaoice.com)
-  - An AI chatbot developed by Microsoft.
+<div class="resource-item" data-type="freemium">
+- **ChatGPT** - [ChatGPT](https://chat.openai.com)
+  - Powerful AI chatbot by OpenAI.
+  - <span class="badge freemium">Freemium</span>
+</div>
+
+<div class="resource-item" data-type="free">
+- **Claude** - [Claude](https://www.anthropic.com/claude)
+  - AI assistant by Anthropic.
+  - <span class="badge free">Free</span>
+</div>
+
+<div class="resource-item" data-type="free">
+- **Gemini** - [Gemini](https://gemini.google.com)
+  - AI assistant by Google.
+  - <span class="badge free">Free</span>
+</div>
+
+<div class="resource-item" data-type="free">
+- **DeepSeek** - [DeepSeek](https://www.deepseek.ai)
+  - AI-powered search assistant.
+  - <span class="badge free">Free</span>
+</div>
+
+<div class="resource-item" data-type="freemium">
+- **Jasper** - [Jasper](https://www.jasper.ai)
+  - AI writing assistant.
+  - <span class="badge freemium">Freemium</span>
+</div>
+
+<div class="resource-item" data-type="free">
+- **Pi** - [Pi](https://pi.ai)
+  - Personal AI assistant by Inflection.
+  - <span class="badge free">Free</span>
+</div>
 
 ---
 
 ## 2. AI-Powered Applications 🛠️
-Install and use these AI-powered applications for various tasks.
 
-### Key Tools:
-- **Grammarly:** [Grammarly](https://www.grammarly.com)
-  - An AI-powered writing assistant.
-- **Canva:** [Canva](https://www.canva.com)
-  - A graphic design tool with AI features.
-- **Adobe Sensei:** [Adobe Sensei](https://www.adobe.com/sensei.html)
-  - AI and machine learning in Adobe products.
-- **Lumen5:** [Lumen5](https://www.lumen5.com)
-  - An AI-powered video creation tool.
-- **Copy.ai:** [Copy.ai](https://www.copy.ai)
-  - An AI-powered content generation tool.
-- **Synthesia:** [Synthesia](https://www.synthesia.io)
-  - An AI video creation platform.
-- **Descript:** [Descript](https://www.descript.com)
-  - An AI-powered audio and video editing tool.
-- **Otter.ai:** [Otter.ai](https://otter.ai)
-  - An AI-powered transcription service.
-- **DALL-E:** [DALL-E](https://www.openai.com/dall-e-2/)
-  - An AI image generation tool by OpenAI.
-- **Runway ML:** [Runway ML](https://runwayml.com)
-  - A platform for creative AI applications.
+<div class="resource-item" data-type="freemium">
+- **Grammarly** - [Grammarly](https://www.grammarly.com)
+  - AI-powered writing assistant.
+  - <span class="badge freemium">Freemium</span>
+</div>
+
+<div class="resource-item" data-type="freemium">
+- **Canva** - [Canva](https://www.canva.com)
+  - Graphic design with AI features.
+  - <span class="badge freemium">Freemium</span>
+</div>
+
+<div class="resource-item" data-type="free">
+- **Midjourney** - [Midjourney](https://www.midjourney.com)
+  - AI image generation.
+  - <span class="badge free">Free</span>
+</div>
+
+<div class="resource-item" data-type="free">
+- **Stable Diffusion** - [Stable Diffusion](https://stability.ai)
+  - Open source image generation.
+  - <span class="badge free">Free</span> Open Source
+</div>
+
+<div class="resource-item" data-type="freemium">
+- **Copy.ai** - [Copy.ai](https://www.copy.ai)
+  - AI content generation.
+  - <span class="badge freemium">Freemium</span>
+</div>
+
+<div class="resource-item" data-type="freemium">
+- **Synthesia** - [Synthesia](https://www.synthesia.io)
+  - AI video creation platform.
+  - <span class="badge freemium">Freemium</span>
+</div>
+
+<div class="resource-item" data-type="freemium">
+- **Descript** - [Descript](https://www.descript.com)
+  - AI audio/video editing.
+  - <span class="badge freemium">Freemium</span>
+</div>
+
+<div class="resource-item" data-type="freemium">
+- **Otter.ai** - [Otter.ai](https://otter.ai)
+  - AI transcription service.
+  - <span class="badge freemium">Freemium</span>
+</div>
+
+<div class="resource-item" data-type="free">
+- **Lumen5** - [Lumen5](https://www.lumen5.com)
+  - AI video creation from text.
+  - <span class="badge free">Free</span>
+</div>
+
+<div class="resource-item" data-type="freemium">
+- **Runway** - [Runway](https://runwayml.com)
+  - Creative AI applications.
+  - <span class="badge freemium">Freemium</span>
+</div>
+
+<div class="resource-item" data-type="free">
+- **Perplexity** - [Perplexity](https://www.perplexity.ai)
+  - AI-powered search engine.
+  - <span class="badge free">Free</span>
+</div>
+
+<div class="resource-item" data-type="freemium">
+- **Notion AI** - [Notion AI](https://www.notion.so/product/ai)
+  - AI writing assistant in Notion.
+  - <span class="badge freemium">Freemium</span>
+</div>
 
 ---
 

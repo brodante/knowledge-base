@@ -8,55 +8,189 @@ permalink: /tools/cybersecurity
 
 Explore a comprehensive list of essential cybersecurity tools, both online and offline, to enhance your security skills and capabilities.
 
+{% include resource-filter.html %}
+
 ---
 
 ## 1. Online Tools 🌐
-Utilize these online tools for various cybersecurity tasks.
 
-### Key Tools:
-- **CyberChef:** [CyberChef](https://gchq.github.io/CyberChef/)
-  - A web app for encryption, encoding, compression, and data analysis.
-- **MultiDecoder:** [MultiDecoder](https://www.cachesleuth.com/multidecoder/)
+<div class="resource-item" data-type="free">
+- **CyberChef** - [CyberChef](https://gchq.github.io/CyberChef/)
+  - Web app for encryption, encoding, compression.
+  - <span class="badge free">Free</span>
+</div>
+
+<div class="resource-item" data-type="free">
+- **MultiDecoder** - [MultiDecoder](https://www.cachesleuth.com/multidecoder/)
   - Decode multiple types of encoded data.
-- **dCode:** [dCode](https://www.dcode.fr/en)
-  - A comprehensive tool for solving codes and ciphers.
-- **VirusTotal:** [VirusTotal](https://www.virustotal.com)
-  - Analyze files and URLs for viruses and malware.
-- **Shodan:** [Shodan](https://www.shodan.io)
-  - Search engine for Internet-connected devices.
-- **Have I Been Pwned:** [Have I Been Pwned](https://haveibeenpwned.com)
-  - Check if your email or phone has been part of a data breach.
-- **Censys:** [Censys](https://censys.io)
-  - Search engine for Internet-connected devices and networks.
-- **URLScan:** [URLScan](https://urlscan.io)
-  - Scan and analyze websites for malicious content.
-- **Hybrid Analysis:** [Hybrid Analysis](https://www.hybrid-analysis.com)
-  - Free malware analysis service for the community.
-- **ThreatCrowd:** [ThreatCrowd](https://www.threatcrowd.org)
-  - Search engine for threats, including IPs, domains, and hashes.
+  - <span class="badge free">Free</span>
+</div>
+
+<div class="resource-item" data-type="free">
+- **dCode** - [dCode](https://www.dcode.fr/en)
+  - Tool for solving codes and ciphers.
+  - <span class="badge free">Free</span>
+</div>
+
+<div class="resource-item" data-type="free">
+- **VirusTotal** - [VirusTotal](https://www.virustotal.com)
+  - Analyze files and URLs for malware.
+  - <span class="badge free">Free</span>
+</div>
+
+<div class="resource-item" data-type="free">
+- **Shodan** - [Shodan](https://www.shodan.io)
+  - Search engine for IoT devices.
+  - <span class="badge free">Free</span>
+</div>
+
+<div class="resource-item" data-type="free">
+- **Have I Been Pwned** - [Have I Been Pwned](https://haveibeenpwned.com)
+  - Check email for data breaches.
+  - <span class="badge free">Free</span>
+</div>
+
+<div class="resource-item" data-type="free">
+- **Censys** - [Censys](https://censys.io)
+  - Internet research and threat hunting.
+  - <span class="badge free">Free</span>
+</div>
+
+<div class="resource-item" data-type="free">
+- **URLScan** - [URLScan](https://urlscan.io)
+  - Website scanning and analysis.
+  - <span class="badge free">Free</span>
+</div>
+
+<div class="resource-item" data-type="free">
+- **Hybrid Analysis** - [Hybrid Analysis](https://www.hybrid-analysis.com)
+  - Free malware analysis service.
+  - <span class="badge free">Free</span>
+</div>
+
+<div class="resource-item" data-type="free">
+- **ThreatCrowd** - [ThreatCrowd](https://www.threatcrowd.org)
+  - Threat intelligence search engine.
+  - <span class="badge free">Free</span>
+</div>
+
+<div class="resource-item" data-type="freemium">
+- **AbuseIPDB** - [AbuseIPDB](https://www.abuseipdb.com)
+  - Check IP reputation for abuse.
+  - <span class="badge freemium">Freemium</span>
+</div>
+
+<div class="resource-item" data-type="free">
+- **DNSDumpster** - [DNSDumpster](https://dnsdumpster.com)
+  - DNS reconnaissance tool.
+  - <span class="badge free">Free</span>
+</div>
+
+<div class="resource-item" data-type="free">
+- **ViewDNS** - [ViewDNS](https://viewdns.info)
+  - DNS and WHOIS lookup tools.
+  - <span class="badge free">Free</span>
+</div>
 
 ---
 
 ## 2. Offline Tools 🛠️
-Install and use these offline tools for in-depth cybersecurity analysis and testing.
 
-### Key Tools:
-- **Wireshark:** Network protocol analyzer.
-- **Metasploit:** Penetration testing framework.
-- **Sprinto:** Security automation tool.
-- **Kali Linux:** Linux distribution for penetration testing.
-- **Cain and Abel:** Password recovery tool.
-- **NMap:** Network mapper for network discovery and security auditing.
-- **Nessus Professional:** Vulnerability scanner.
-- **Aircrack-ng:** Suite of tools for assessing WiFi network security.
-- **John the Ripper:** Password cracking tool.
-- **Nikto:** Web server scanner.
-- **Tcpdump:** Packet analyzer.
-- **KisMAC:** Wireless network discovery tool for macOS.
-- **NetStumbler:** Tool for detecting wireless networks.
-- **Splunk:** Platform for searching, monitoring, and analyzing machine-generated data.
-- **Forcepoint:** Cybersecurity software for data protection.
-- **Nexpose:** Vulnerability management solution.
+<div class="resource-item" data-type="free">
+- **Wireshark** - [Wireshark](https://www.wireshark.org)
+  - Network protocol analyzer.
+  - <span class="badge free">Free</span> Open Source
+</div>
+
+<div class="resource-item" data-type="free">
+- **Metasploit** - [Metasploit](https://www.metasploit.com)
+  - Penetration testing framework.
+  - <span class="badge free">Free</span> Open Source
+</div>
+
+<div class="resource-item" data-type="free">
+- **Kali Linux** - [Kali Linux](https://www.kali.org)
+  - Pen testing Linux distribution.
+  - <span class="badge free">Free</span> Open Source
+</div>
+
+<div class="resource-item" data-type="free">
+- **Nmap** - [Nmap](https://nmap.org)
+  - Network mapper and security scanner.
+  - <span class="badge free">Free</span> Open Source
+</div>
+
+<div class="resource-item" data-type="paid">
+- **Nessus** - [Nessus](https://www.tenable.com/products/nessus)
+  - Professional vulnerability scanner.
+  - <span class="badge paid">Paid</span>
+</div>
+
+<div class="resource-item" data-type="free">
+- **Aircrack-ng** - [Aircrack-ng](https://www.aircrack-ng.org)
+  - WiFi security assessment tools.
+  - <span class="badge free">Free</span> Open Source
+</div>
+
+<div class="resource-item" data-type="free">
+- **John the Ripper** - [John the Ripper](https://www.openwall.com/john/)
+  - Password cracker.
+  - <span class="badge free">Free</span> Open Source
+</div>
+
+<div class="resource-item" data-type="free">
+- **Nikto** - [Nikto](https://cirt.net/Nikto2)
+  - Web server scanner.
+  - <span class="badge free">Free</span> Open Source
+</div>
+
+<div class="resource-item" data-type="free">
+- **Tcpdump** - [Tcpdump](https://www.tcpdump.org)
+  - Packet analyzer.
+  - <span class="badge free">Free</span> Open Source
+</div>
+
+<div class="resource-item" data-type="paid">
+- **Burp Suite** - [Burp Suite](https://portswigger.net/burp)
+  - Web application security testing.
+  - <span class="badge paid">Paid</span> (Community Edition free)
+</div>
+
+<div class="resource-item" data-type="free">
+- **Ghidra** - [Ghidra](https://ghidra-sre.org)
+  - Software reverse engineering framework.
+  - <span class="badge free">Free</span> Open Source
+</div>
+
+<div class="resource-item" data-type="free">
+- **Autopsy** - [Autopsy](https://www.sleuthkit.org/autopsy)
+  - Digital forensics platform.
+  - <span class="badge free">Free</span> Open Source
+</div>
+
+<div class="resource-item" data-type="free">
+- **ZAP** - [OWASP ZAP](https://www.zaproxy.org)
+  - Web application scanner.
+  - <span class="badge free">Free</span> Open Source
+</div>
+
+<div class="resource-item" data-type="paid">
+- **Splunk** - [Splunk](https://www.splunk.com)
+  - SIEM and log analysis.
+  - <span class="badge paid">Paid</span> (Free version available)
+</div>
+
+<div class="resource-item" data-type="free">
+- **Suricata** - [Suricata](https://suricata.io)
+  - Network IDS/IPS.
+  - <span class="badge free">Free</span> Open Source
+</div>
+
+<div class="resource-item" data-type="free">
+- **Zeek** - [Zeek](https://zeek.org)
+  - Network security monitor.
+  - <span class="badge free">Free</span> Open Source
+</div>
 
 ---
 

@@ -1,0 +1,77 @@
+<!-- Resource Filter Component -->
+<div class="resource-filter">
+  <style>
+    .filter-container {
+      margin: 20px 0;
+      padding: 15px;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      border-radius: 10px;
+      border: 1px solid #0f3460;
+    }
+    .filter-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .filter-btn {
+      padding: 8px 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      font-size: 14px;
+    }
+    .filter-btn.all { background: #6366f1; color: white; }
+    .filter-btn.free { background: #10b981; color: white; }
+    .filter-btn.paid { background: #f59e0b; color: white; }
+    .filter-btn.freemium { background: #8b5cf6; color: white; }
+    .filter-btn:hover { transform: scale(1.05); box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+    .filter-btn.active { box-shadow: 0 0 0 3px rgba(255,255,255,0.5); }
+    .resource-item { transition: all 0.3s ease; }
+    .resource-item.hidden { display: none; }
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: 600;
+      margin-left: 8px;
+    }
+    .badge.free { background: #10b981; color: white; }
+    .badge.paid { background: #f59e0b; color: white; }
+    .badge.freemium { background: #8b5cf6; color: white; }
+  </style>
+  
+  <div class="filter-container">
+    <div class="filter-buttons">
+      <span style="color: #94a3b8; margin-right: 10px;">🔍 Filter by:</span>
+      <button class="filter-btn all active" onclick="filterResources('all')">All Resources</button>
+      <button class="filter-btn free" onclick="filterResources('free')">✓ Free</button>
+      <button class="filter-btn freemium" onclick="filterResources('freemium')">⚡ Freemium</button>
+      <button class="filter-btn paid" onclick="filterResources('paid')">💰 Paid</button>
+    </div>
+  </div>
+</div>
+
+<script>
+function filterResources(type) {
+  // Update active button
+  document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+  document.querySelector(`.filter-btn.${type}`).classList.add('active');
+  
+  // Filter resources
+  document.querySelectorAll('.resource-item').forEach(item => {
+    if (type === 'all') {
+      item.classList.remove('hidden');
+    } else {
+      if (item.dataset.type === type) {
+        item.classList.remove('hidden');
+      } else {
+        item.classList.add('hidden');
+      }
+    }
+  });
+}
+</script>
