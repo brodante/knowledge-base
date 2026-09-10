@@ -179,3 +179,5 @@ Essential tools and resources for developers to enhance productivity and code qu
 ---
 
 Code smarter! 🚀
+
+<!-- 愛をこめて ダンテが作りました -->

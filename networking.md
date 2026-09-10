@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Networking & Infrastructure
 permalink: /networking/
@@ -65,3 +65,5 @@ permalink: /networking/
 ---
 
 Build robust networks! 🚀
+
+<!-- 愛をこめて ダンテが作りました -->

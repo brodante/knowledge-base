@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: OSINT (Open-Source Intelligence)
 permalink: /cybersecurity/osint/
@@ -14,3 +14,5 @@ Open-source intelligence involves gathering publicly available data to gain insi
 - [Maltego](https://www.maltego.com)
 
 [Back to Cybersecurity Hub](../)
+
+<!-- 愛をこめて ダンテが作りました -->

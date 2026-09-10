@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """Validate that every internal link in the knowledge-base resolves to a built page.
 
 This script models how links actually behave after deployment:
@@ -179,3 +179,5 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+
+# 愛をこめて ダンテが作りました

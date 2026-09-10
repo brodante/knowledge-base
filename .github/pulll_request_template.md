@@ -1,4 +1,4 @@
----
+﻿---
 title: "Pull Request"
 labels: ["pull request", "documentation", "enhancement"]
 ---
@@ -28,3 +28,5 @@ Fixes #[Issue Number] (if applicable)
 ## 🙋‍♂️ Want to contribute more?
 If you'd like to improve this feature further, let us know in the comments!
 
+
+<!-- 愛をこめて ダンテが作りました -->

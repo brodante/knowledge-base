@@ -121,3 +121,5 @@ Structured learning resources for cybersecurity careers.
 ---
 
 Level up your security skills! 🎮
+
+<!-- 愛をこめて ダンテが作りました -->

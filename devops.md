@@ -137,3 +137,5 @@ Tools and platforms for modern infrastructure and deployment.
 ---
 
 Scale with confidence! 🚀
+
+<!-- 愛をこめて ダンテが作りました -->

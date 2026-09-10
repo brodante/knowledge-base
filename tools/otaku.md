@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Otaku Tools in short
 permalink: /tools/otaku/
@@ -104,3 +104,5 @@ Enhance your otaku experience with these resources:
 ---
 
 Stay passionate, keep exploring, and enjoy your otaku journey. 🚀
+
+<!-- 愛をこめて ダンテが作りました -->

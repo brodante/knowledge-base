@@ -121,3 +121,5 @@ Complete guide to web development.
 ---
 
 Build amazing web apps! 🌐
+
+<!-- 愛をこめて ダンテが作りました -->

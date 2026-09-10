@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Tools
 permalink: /tools/
@@ -34,3 +34,5 @@ A curated collection of tools across various domains — from development and se
 - [Miscellaneous Tools](misc/) — Everything else that doesn't fit neatly in a category
 
 ---
+
+<!-- 愛をこめて ダンテが作りました -->

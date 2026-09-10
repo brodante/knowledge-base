@@ -179,3 +179,5 @@ Enhance your cybersecurity knowledge with these resources:
 ---
 
 Stay secure, keep learning, and stay vigilant. 🚀
+
+<!-- 愛をこめて ダンテが作りました -->

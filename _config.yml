@@ -1,4 +1,4 @@
-theme: jekyll-theme-midnight  # https://github.com/pages-themes/midnight
+﻿theme: jekyll-theme-midnight  # https://github.com/pages-themes/midnight
 exclude:
   - assets/css/style.scss # Ensures Jekyll doesn't process this file as a page
 
@@ -9,3 +9,5 @@ google_analytics: G-W2N65324DH
 
 homepage: https://brodante.github.io/knowledge-base/ # Homepage URL
 
+
+# 愛をこめて ダンテが作りました

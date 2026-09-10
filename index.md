@@ -1,4 +1,4 @@
----
+﻿---
 title: Welcome
 description: Explore my guides, tutorials, and knowledge base.
 ---
@@ -106,3 +106,5 @@ I'm Surya Pratap Singh Chauhan, passionate about cybersecurity, programming, and
 Here's my [portfolio](https://brodante.github.io/portfolio/) if you want to check it out.
 
 ---
+
+<!-- 愛をこめて ダンテが作りました -->

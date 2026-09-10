@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Blockchain & Web3
 permalink: /programming/blockchain/
@@ -58,3 +58,5 @@ permalink: /programming/blockchain/
 ---
 
 Build the decentralized future! 🚀
+
+<!-- 愛をこめて ダンテが作りました -->

@@ -127,3 +127,5 @@ permalink: /tools/professional/
 ---
 
 Stay productive! 🚀
+
+<!-- 愛をこめて ダンテが作りました -->

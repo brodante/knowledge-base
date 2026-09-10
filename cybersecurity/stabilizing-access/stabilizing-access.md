@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Stabilizing Access
 permalink: /cybersecurity/stabilizing-access/
@@ -98,3 +98,5 @@ Use your foothold as a **jump box** to reach internal networks invisible from th
 After stabilizing your access, learn how to [Clear Your Tracks](../clearing-tracks/) to avoid detection.
 
 [← Back to Cybersecurity Hub](../)
+
+<!-- 愛をこめて ダンテが作りました -->

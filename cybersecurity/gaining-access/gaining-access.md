@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Gaining Access
 permalink: /cybersecurity/gaining-access/
@@ -73,3 +73,5 @@ Zero-days are vulnerabilities unknown to the vendor, with **no patch available**
 Once you gain access, move to [Stabilizing Access](../stabilizing-access/) to learn how to maintain your foothold.
 
 [← Back to Cybersecurity Hub](../)
+
+<!-- 愛をこめて ダンテが作りました -->

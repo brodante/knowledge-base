@@ -1,4 +1,4 @@
----
+﻿---
 name: " Pull request template"
 about: PR request template.
 title: ''
@@ -47,3 +47,5 @@ Fixes #ISSUE_ID
 ## 💡 Additional Notes
 
 <!-- Add any additional context, screenshots, or considerations. -->
+
+<!-- 愛をこめて ダンテが作りました -->

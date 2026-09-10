@@ -131,3 +131,5 @@ permalink: /linux/
 ---
 
 Master the command line! 💻
+
+<!-- 愛をこめて ダンテが作りました -->

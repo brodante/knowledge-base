@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Clearing Tracks
 permalink: /cybersecurity/clearing-tracks/
@@ -90,3 +90,5 @@ You've now covered the full offensive lifecycle:
 5. **Clearing Tracks** — you are here 🙂
 
 [← Back to Cybersecurity Hub](../)
+
+<!-- 愛をこめて ダンテが作りました -->

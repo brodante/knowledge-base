@@ -1,4 +1,4 @@
-# Contributing to Dante's Knowledge Base
+﻿# Contributing to Dante's Knowledge Base
 
 Thank you for your interest in contributing to **Dante's Knowledge Base**! This guide will help you get started and ensure that your contributions align with the project's structure and quality standards.
 
@@ -62,3 +62,5 @@ If you have any questions or need clarification, feel free to **open a discussio
 
 Happy contributing! 🚀
 
+
+<!-- 愛をこめて ダンテが作りました -->

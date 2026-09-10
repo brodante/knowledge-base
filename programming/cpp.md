@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: C++ Programming Roadmap in short
 permalink: /programming/cpp/
@@ -141,3 +141,5 @@ Enhance your learning with these resources:
 ---
 
 Start small, keep learning, and stay determined. 🚀
+
+<!-- 愛をこめて ダンテが作りました -->

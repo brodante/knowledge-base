@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Python Programming Roadmap in Short
 permalink: /programming/py/
@@ -135,3 +135,5 @@ Enhance your learning with these resources:
 ---
 
 Start small, keep learning, and stay determined. 🚀
+
+<!-- 愛をこめて ダンテが作りました -->

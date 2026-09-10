@@ -119,3 +119,5 @@ permalink: /tools/api-db/
 ---
 
 Build robust APIs! 🚀
+
+<!-- 愛をこめて ダンテが作りました -->

@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Cybersecurity Knowledge Base
 permalink: /cybersecurity/
@@ -88,3 +88,5 @@ For a comprehensive roadmap of cybersecurity certifications, refer to this [road
 ---
 
 Begin your cybersecurity journey with these foundational steps and tools. Adjust your learning based on your interests and career goals within the cybersecurity field.
+
+<!-- 愛をこめて ダンテが作りました -->

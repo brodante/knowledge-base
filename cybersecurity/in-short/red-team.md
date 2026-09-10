@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Red Teaming Roadmap in short
 permalink: /cybersecurity/in-short/red-team
@@ -110,3 +110,5 @@ Start your journey with practical labs:
 ---
 
 Start small, keep learning, and stay ethical. 🚀
+
+<!-- 愛をこめて ダンテが作りました -->

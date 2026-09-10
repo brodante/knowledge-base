@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Blue Teaming Roadmap in short
 permalink: /cybersecurity/in-short/blue-team
@@ -101,3 +101,5 @@ Enhance your skills with practical labs:
 ---
 
 Start small, keep learning, and stay vigilant. 🚀
+
+<!-- 愛をこめて ダンテが作りました -->

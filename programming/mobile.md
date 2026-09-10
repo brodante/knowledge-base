@@ -89,3 +89,5 @@ Build apps for iOS and Android.
 ---
 
 Ship mobile apps! 📦
+
+<!-- 愛をこめて ダンテが作りました -->

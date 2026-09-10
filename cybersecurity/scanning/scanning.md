@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Scanning
 permalink: /cybersecurity/scanning/
@@ -14,3 +14,5 @@ Learn about port scanning, vulnerability scanning, and tools like [nmap](https:/
 - [OpenVAS](https://www.openvas.org/) - Open-source vulnerability scanner.
 
 ---
+
+<!-- 愛をこめて ダンテが作りました -->

@@ -141,3 +141,5 @@ Protect your digital life with these tools.
 ---
 
 Stay secure! 🔒
+
+<!-- 愛をこめて ダンテが作りました -->

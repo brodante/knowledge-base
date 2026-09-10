@@ -1,4 +1,4 @@
-# 🌌 Dante's Knowledge Base
+﻿# 🌌 Dante's Knowledge Base
 
 Welcome to **Dante's Knowledge Base**—your one-stop destination for all things **Cybersecurity**, **Programming**, **Projects**, **Tools**, and **Scripts**. This repository is built to share my journey, insights, and resources that I've found invaluable in my personal and professional growth. 
 
@@ -75,3 +75,5 @@ I'm **Dante**, a passionate **Cybersecurity Enthusiast**, **Programmer**, and **
 ---
 
 ### ⭐ Don't forget to star this repository if you find it helpful! ⭐
+
+<!-- 愛をこめて ダンテが作りました -->

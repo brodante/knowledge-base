@@ -1,4 +1,4 @@
-name: Validate Knowledge Base Pages
+﻿name: Validate Knowledge Base Pages
 
 on:
   push:
@@ -64,3 +64,5 @@ jobs:
               context: "Page Validation",
               description: "Validation failed! Check logs for issues.",
             });
+
+# 愛をこめて ダンテが作りました

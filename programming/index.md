@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Programming
 permalink: /programming/
@@ -23,3 +23,5 @@ Learning roadmaps, resources, and curated tool lists for various programming dom
 - [Blockchain & Web3](blockchain/) — Ethereum, Solana, Solidity, smart contracts, and wallets
 
 ---
+
+<!-- 愛をこめて ダンテが作りました -->

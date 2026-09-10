@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Purple Teaming Roadmap in short
 permalink: /cybersecurity/in-short/purple-team
@@ -71,3 +71,5 @@ Keep up with the latest trends and developments in cybersecurity.
 ---
 
 Embark on your Purple Teaming journey with this roadmap and continuously evolve your skills to stay ahead in the ever-changing field of cybersecurity.
+
+<!-- 愛をこめて ダンテが作りました -->

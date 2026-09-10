@@ -129,3 +129,5 @@ Tools and resources for gamers and game development.
 ---
 
 Game on! 🎲
+
+<!-- 愛をこめて ダンテが作りました -->

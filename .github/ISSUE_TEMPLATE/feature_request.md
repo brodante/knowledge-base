@@ -1,4 +1,4 @@
----
+﻿---
 name: Feature request
 about: Suggest an idea for this project
 title: ''
@@ -28,3 +28,5 @@ Add any other context or screenshots about the feature request here.
 
 **Would you like to work on this feature?**
 [Yes/No]
+
+<!-- 愛をこめて ダンテが作りました -->

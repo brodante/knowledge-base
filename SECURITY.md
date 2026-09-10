@@ -1,4 +1,4 @@
-# Security Policy
+﻿# Security Policy
 
 ## Reporting a Vulnerability
 If you discover a security vulnerability in this project, please follow these steps:
@@ -28,3 +28,5 @@ We appreciate responsible disclosure. If a vulnerability is reported privately a
 
 Thank you for helping keep this project secure! 🚀
 
+
+<!-- 愛をこめて ダンテが作りました -->

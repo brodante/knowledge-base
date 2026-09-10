@@ -85,3 +85,5 @@ Various useful tools that don't fit into other categories.
 ---
 
 Stay curious! 🔍
+
+<!-- 愛をこめて ダンテが作りました -->

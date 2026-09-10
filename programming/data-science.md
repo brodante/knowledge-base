@@ -129,3 +129,5 @@ Resources for data analysis, machine learning, and AI development.
 ---
 
 Unlock insights from data! 🔍
+
+<!-- 愛をこめて ダンテが作りました -->

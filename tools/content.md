@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Content Creation & Media
 permalink: /tools/content/
@@ -65,3 +65,5 @@ permalink: /tools/content/
 ---
 
 Create amazing content! 🎬
+
+<!-- 愛をこめて ダンテが作りました -->

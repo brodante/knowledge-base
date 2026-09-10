@@ -123,3 +123,5 @@ permalink: /tools/design/
 ---
 
 Create beautiful designs! ✨
+
+<!-- 愛をこめて ダンテが作りました -->

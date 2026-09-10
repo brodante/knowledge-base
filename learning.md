@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Learning Resources
 permalink: /learning/
@@ -67,3 +67,5 @@ permalink: /learning/
 ---
 
 Keep learning! 🚀
+
+<!-- 愛をこめて ダンテが作りました -->
