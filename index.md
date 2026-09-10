@@ -81,6 +81,20 @@ Distributions, shells, monitoring, package managers, SSH.
 
 ---
 
+## ⌨️ Command Line
+
+Guides for Windows CMD, PowerShell, Bash, and a cross-shell cheat sheet.
+
+| | |
+|---|---|
+| [Command Line Hub](command-line/) | Overview of the whole section |
+| [Command Prompt & Windows Terminal](command-line/cmd/) | dir, cd, ipconfig, batch basics |
+| [PowerShell](command-line/powershell/) | Cmdlets, pipelines, aliases, scripting |
+| [Bash (Linux, Git Bash, macOS)](command-line/bash/) | ls, grep, chmod, packages, processes |
+| [Cross-Shell Cheat Sheet](command-line/cheat-sheet/) | Same task in CMD vs PowerShell vs Bash |
+
+---
+
 ## 🌐 Networking & Infrastructure
 
 Network analysis, DNS, VPNs, firewalls, load balancing.
